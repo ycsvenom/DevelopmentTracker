@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<PublishSingleFile>true</PublishSingleFile>
+		<!--<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>-->
+		<PublishReadyToRun>true</PublishReadyToRun>
+		<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+		<Platforms>AnyCPU;x64</Platforms>
+		<ApplicationIcon>Resources\icon_sonar_256.ico</ApplicationIcon>
+		<AssemblyVersion>0.1.0.0</AssemblyVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\bin-closed.png" />
+		<None Remove="Resources\exit.png" />
+		<None Remove="Resources\export.png" />
+		<None Remove="Resources\icon_sonar_128.ico" />
+		<None Remove="Resources\icon_sonar_256.ico" />
+		<None Remove="Resources\icon_sonar_32.ico" />
+		<None Remove="Resources\icon_sonar_48.ico" />
+		<None Remove="Resources\icon_sonar_64.ico" />
+		<None Remove="Resources\modify.png" />
+		<None Remove="Resources\open.png" />
+		<None Remove="Resources\register-progress.png" />
+		<None Remove="Resources\save.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Resources\bin-closed.png" />
+		<Resource Include="Resources\exit.png" />
+		<Resource Include="Resources\export.png" />
+		<Resource Include="Resources\icon_sonar_256.ico" />
+		<Resource Include="Resources\icon_sonar_32.ico" />
+		<Resource Include="Resources\icon_sonar_48.ico" />
+		<Resource Include="Resources\icon_sonar_64.ico" />
+		<Resource Include="Resources\open.png" />
+		<Resource Include="Resources\register-progress.png" />
+		<Resource Include="Resources\modify.png" />
+		<Resource Include="Resources\save.png" />
+	</ItemGroup>
+
+</Project>
